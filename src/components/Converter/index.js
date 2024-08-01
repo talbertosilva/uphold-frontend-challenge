@@ -17,6 +17,7 @@ const initialState = {
     LTC: 0,
     XRP: 0,
     CNY: 0,
+    PLN: 0,
   },
 };
 
