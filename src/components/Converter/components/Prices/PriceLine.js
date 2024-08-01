@@ -8,10 +8,10 @@ const PriceLine = ({ price, currency }) => {
       <div className="currency-container">
         <img
           src={`coins-logo/${currency}.png`}
-          alt="currency logo"
-          width={"24px"}
-          height={"24px"}
-        ></img>
+          alt={`${currency} logo`}
+          width="24px"
+          height="24px"
+        />
         <p>{currency}</p>
       </div>
     </div>

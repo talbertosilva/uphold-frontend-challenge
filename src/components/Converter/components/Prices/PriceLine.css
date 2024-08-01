@@ -10,12 +10,13 @@
         font-size: medium;
         font-weight: 700;
         color: rgb(78, 78, 78);
+        max-width: 100px;
     }
 
     .currency-container {
         display: flex;
         gap: 8px;
-        padding-right: 35px;
+        width: 96px;
         align-items: center;
 
         p {

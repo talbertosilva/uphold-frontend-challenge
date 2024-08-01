@@ -28,18 +28,15 @@ const Converter = () => {
     <div className="converter-container">
       <Suspense fallback={<div>Loading...</div>}>
         <h1 id="title">Currency Converter</h1>
-
         <p id="subtitle">
           Receive competitive and transparent pricing with no hidden spreads.
           See how we compare.
         </p>
-
         <InputBox
           data={data}
           setData={setData}
           setFetchLoading={setFetchLoading}
         />
-
         <Prices data={data} fetchLoading={fetchLoading} />
       </Suspense>
     </div>

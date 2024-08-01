@@ -30,7 +30,7 @@ const InputBox = ({ data, setData, setFetchLoading }) => {
       }
     };
 
-    if (debouncedValue !== value || debouncedCurrency !== inputCurrency) {
+    if (debouncedValue !== value || debouncedCurrency !== currency) {
       fetchData();
     }
   }, [debouncedValue, debouncedCurrency, currency, list, value, setData]);
@@ -59,7 +59,7 @@ const InputBox = ({ data, setData, setFetchLoading }) => {
             height="24px"
           />
           <p>{inputCurrency}</p>
-          <img src="coins-logo/dropdown-icon.svg" alt="dropdown icon" />
+          <img src="coins-logo/dropdown-icon.svg" alt="Dropdown icon" />
         </div>
 
         {isDropdownOpen && (

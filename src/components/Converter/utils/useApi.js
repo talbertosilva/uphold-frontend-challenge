@@ -21,7 +21,7 @@ export const fetchPrices = async (currency, list) => {
 
     return updatedPrices;
   } catch (error) {
-    console.error("Error fetching prices:", error.message);
+    console.error("Error >>>", error.message);
     throw error;
   }
 };
