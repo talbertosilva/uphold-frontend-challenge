@@ -10,10 +10,20 @@ export const fetchPrices = async (currency, list) => {
   try {
     const updatedPrices = { ...list };
 
+    const tickers = await sdk.getTicker(currency);
+
     for (let currencyItem in updatedPrices) {
       if (currencyItem !== currency) {
-        const data = await sdk.getTicker(`${currency}-${currencyItem}`);
-        updatedPrices[currencyItem] = data.ask;
+        const matchingTicker = tickers.find(
+          (ticker) =>
+            ticker.pair === `${currencyItem}-${currency}` ||
+            ticker.pair === `${currency}${currencyItem}`
+        );
+        if (matchingTicker) {
+          updatedPrices[currencyItem] = parseFloat(matchingTicker.ask);
+        } else {
+          console.log(`There's no match for that ticker.`);
+        }
       } else {
         updatedPrices[currencyItem] = 1;
       }
