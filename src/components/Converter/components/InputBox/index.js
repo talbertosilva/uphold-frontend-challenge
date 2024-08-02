@@ -46,6 +46,7 @@ const InputBox = ({ data, setData, setFetchLoading }) => {
       <input
         placeholder={value}
         value={inputValue}
+        type={"number"}
         onChange={(e) => setInputValue(e.target.value)}
       />
       <div className="dropdown-currencies">
