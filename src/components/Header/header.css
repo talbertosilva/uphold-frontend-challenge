@@ -54,3 +54,23 @@
 .header-container button:hover {
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .header-container button {
+        display: none;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-container img {
+        min-width: 100%;
+    }
+
+    .header-container {
+        display: block;
+        align-content: center;
+    }
+}
