@@ -15,10 +15,10 @@ Designed with simplicity in mind and using the Uphold Design System, the app pro
 
 # Technologies used
 
-React 
-JavaScript
-CSS (Vanilla)
-Create-React-App
+React\
+JavaScript\
+CSS (Vanilla)\
+Create-React-App\
 React Testing Library
 
 # Run the app
