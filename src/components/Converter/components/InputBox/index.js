@@ -74,6 +74,7 @@ const InputBox = ({ data, setData, setFetchLoading }) => {
                   src={`coins-logo/${itemCurrency.toUpperCase()}.png`}
                   alt={`${itemCurrency} logo`}
                   height="24px"
+                  loading="lazy"
                 />
                 <p>{itemCurrency}</p>
               </div>
